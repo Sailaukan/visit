@@ -1,0 +1,28 @@
+.resumePage {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .heading {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .section {
+    margin-bottom: 50px;
+  }
+  
+  .list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .listItem {
+    background-color: #f5f5f5;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+  }
+  
