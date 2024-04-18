@@ -96,12 +96,6 @@ function ResumePage() {
                         - Designed a visual identity for 3 international robotics competitions<br />
                     </li>
                     <li className={styles.listItem}>
-                        <strong>Judge</strong>, Smart Sarbaz, Ministry of Defense<br />
-                        Jun 2023
-                        <br /><br />
-                        - Judged 40+ projects on an international military robotics competition "Smart Sarbaz" in Spassk military camp<br />
-                    </li>
-                    <li className={styles.listItem}>
                         <strong>Graphic Designer</strong>, Smart Investor<br />
                         Sep 2022 - Nov 2022
                         <br /><br />
@@ -114,6 +108,22 @@ function ResumePage() {
                         Jun 2020 - May 2023
                         <br /><br />
                         Designed posters, social media posts, web site elements, infographics, etc.
+                    </li>
+                </ul>
+            </section>
+
+            <section className={styles.section}>
+                <h2 className={styles.heading}>Roles</h2>
+                <ul className={styles.list}>
+                    <li className={styles.listItem}>
+                        <strong>Delegate of Kazakhstan</strong>, The 74th International Astronautical Congress, Baku, Azerbaijan<br />
+                        Oct 2023
+                    </li>
+                    <li className={styles.listItem}>
+                        <strong>Judge</strong>, Smart Sarbaz, Ministry of Defense<br />
+                        Jun 2023
+                        <br /><br />
+                        - Judged 40+ projects on an international military robotics competition "Smart Sarbaz" in Spassk military camp<br />
                     </li>
                 </ul>
             </section>

@@ -1,57 +1,57 @@
 .homePage {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding: 20px;
-  max-width: 600px;
-  margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
 }
 
 .title {
-  font-size: 2.5rem;
-  margin-bottom: 0px;
-  margin-left: 20px;
-  margin-right: 20px;
+    font-size: 2.5rem;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .intro {
-  font-size: 1.1rem;
-  max-width: 600px;
+    font-size: 1.1rem;
+    max-width: 600px;
 }
 
 .bio {
-  margin-top: 10px;
-  border: 1px solid rgb(198, 198, 198);
-  border-left: 5px solid rgb(80, 80, 80);
-  border-radius: 10px;
-  text-align: left;
-  padding: 15px;
+    margin-top: 10px;
+    border: 1px solid rgb(198, 198, 198);
+    border-left: 5px solid rgb(80, 80, 80);
+    border-radius: 10px;
+    text-align: left;
+    padding: 15px;
 }
 
 .info {
-  margin-top: 10px;
-  border: 1px solid rgb(198, 198, 198);
-  border-radius: 10px;
-  text-align: left;
-  padding: 15px;
+    margin-top: 10px;
+    border: 1px solid rgb(198, 198, 198);
+    border-radius: 10px;
+    text-align: left;
+    padding: 15px;
 }
 
 .info_item {
-    display: flex;      
-    align-items: center;  
-    justify-content: space-between; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .location_content {
     flex: 1;
-    color: black; 
+    color: black;
 }
 
 .location_title {
     font-weight: bold;
     flex: 1;
-    padding: 4px 8px;  
-    color: black; 
+    padding: 4px 8px;
+    color: black;
     max-width: 100px;
 }
 
@@ -60,10 +60,22 @@
 }
 
 a {
-  text-decoration: underline;
-  color: black;
+    text-decoration: underline;
+    color: black;
 }
 
 a:hover {
-  color: rgb(114, 114, 114);
+    color: rgb(114, 114, 114);
+}
+
+.icon {
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.subtitle {
+    margin-top: 50px;
+    font-size: 0.9rem;
+    color: grey;
+    max-width: 600px;
 }
