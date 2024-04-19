@@ -79,3 +79,13 @@ a:hover {
     color: grey;
     max-width: 600px;
 }
+
+.restartButton{
+    background-color: #333;
+    padding: 10px 30px;
+    font-size: 15px;
+    color: white;
+    border: 1px solid;
+    margin-top: 10px;
+    border-radius: 7px;
+}

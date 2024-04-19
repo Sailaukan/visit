@@ -144,20 +144,22 @@ function HomePage() {
             <div className="quiz-container">
                 {showScore ? (
                     <div className='score-section'>
-                        <Confetti
-                            width={width}
-                            height={height}
-                        />
-                        <div>
-                            {(score === 5) && 'Wow, you got a perfect score! You know me like the back of your hand. We\'re practically kindred spirits!'}
-                            {(score === 4) && 'Great job! You got 4 out of 5 right. You really know a lot about me. We must be great friends!'}
-                            {(score === 3) && 'You scored 3 out of 5. Not bad at all! You know me pretty well, but there\'s always room to learn more about each other.'}
-                            {(score === 2) && 'You got 2 out of 5 right. Looks like you have some more to learn about me. Let\'s hang out more!'}
-                            {(score === 1) && 'You got 1 out of 5. Seems like you might not know me very well yet, but that\'s okay! There\'s plenty of time to change that.'}
-                            {(score === 0) && 'Oh, it looks like you didn’t get any right this time. We definitely need to spend more time together!'}
-                        </div>
+                        {score === 5 && (
+                            <>
+                                <Confetti width={width} height={height} />
+                                <div>Wow, you got a perfect score! You know me like the back of your hand. We're practically kindred spirits!</div>
+                            </>
+                        )}
+                        {score === 4 && <div>Great job! You got 4 out of 5 right. You really know a lot about me. We must be great friends!</div>}
+                        {score === 3 && <div>You scored 3 out of 5. Not bad at all! You know me pretty well, but there's always room to learn more about each other.</div>}
+                        {score === 2 && <div>You got 2 out of 5 right. Looks like you have some more to learn about me. Let's hang out more!</div>}
+                        {score === 1 && <div>You got 1 out of 5. Seems like you might not know me very well yet, but that's okay! There's plenty of time to change that.</div>}
+                        {score === 0 && <div>Oh, it looks like you didn’t get any right this time. We definitely need to spend more time together!</div>}
+                        <button className={styles.restartButton} onClick={() => {
+                            setShowScore(false)
+                            setCurrentQuestion(0);
+                        }}>Restart</button>
                     </div>
-
                 ) : (
                     <>
                         <div className='question-section'>
@@ -176,6 +178,7 @@ function HomePage() {
                     </>
                 )}
             </div>
+
 
         </div>
     );
