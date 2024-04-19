@@ -2,6 +2,9 @@ import styles from './HomePage.module.css';
 import React, { useState } from 'react';
 import './Quiz.css';
 
+import useWindowSize from 'react-use/lib/useWindowSize'
+import Confetti from 'react-confetti'
+
 
 const questions = [
     {
@@ -13,7 +16,7 @@ const questions = [
         ]
     },
     {
-        questionText: 'What is my favorite type of juice?', answerOptions: [
+        questionText: 'My favorite type of juice', answerOptions: [
             { answerText: 'Apple', isCorrect: false },
             { answerText: 'Orange', isCorrect: true },
             { answerText: 'Grape', isCorrect: false },
@@ -21,11 +24,27 @@ const questions = [
         ]
     },
     {
-        questionText: 'What is my favorite car?', answerOptions: [
+        questionText: 'My favorite car', answerOptions: [
             { answerText: 'BMW', isCorrect: false },
             { answerText: 'Aston Marin', isCorrect: false },
             { answerText: 'Toyota', isCorrect: false },
             { answerText: 'Mercedes', isCorrect: true },
+        ]
+    },
+    {
+        questionText: 'Olympiad I participated first', answerOptions: [
+            { answerText: 'Programming', isCorrect: false },
+            { answerText: 'Math', isCorrect: true },
+            { answerText: 'Chemistry', isCorrect: false },
+            { answerText: 'Robotics', isCorrect: false },
+        ]
+    },
+    {
+        questionText: 'My score in Brawl Stars', answerOptions: [
+            { answerText: '12 000', isCorrect: false },
+            { answerText: '29 000', isCorrect: true },
+            { answerText: '8 000', isCorrect: false },
+            { answerText: '34 000', isCorrect: false },
         ]
     },
 ];
@@ -33,6 +52,7 @@ const questions = [
 
 
 function HomePage() {
+    const { width, height } = useWindowSize()
 
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [showScore, setShowScore] = useState(false);
@@ -124,6 +144,10 @@ function HomePage() {
             <div className="quiz-container">
                 {showScore ? (
                     <div className='score-section'>
+                        <Confetti
+                            width={width}
+                            height={height}
+                        />
                         <div>
                             {(score === 5) && 'Wow, you got a perfect score! You know me like the back of your hand. We\'re practically kindred spirits!'}
                             {(score === 4) && 'Great job! You got 4 out of 5 right. You really know a lot about me. We must be great friends!'}

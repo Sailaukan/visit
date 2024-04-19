@@ -6,7 +6,7 @@ function ResumePage() {
         <div className={styles.resumePage}>
             <section className={styles.section}>
                 <h1 className={styles.heading}>Professional Summary</h1>
-                <p>I design logos for ministries, create robots on global competitions, develop websites using React, organize the largest rocketry competition in Central Asia, and teach children STEM.</p>
+                <p>I design logos for ministries, create robots for global competitions, develop websites using React, organize the largest rocketry competition in Central Asia, and teach STEM to children.</p>
             </section>
 
             <section className={styles.section}>
@@ -17,7 +17,7 @@ function ResumePage() {
                         <br />
                         Nazarbayev Intellectual School, Pavlodar
                         <br /><br />
-                        Advanced Computer Science and Physics (A-level analogue)
+                        Advanced studies in Computer Science and Physics
                     </li>
                     <li className={styles.listItem}>
                         <strong>School</strong>, 2016-2018
@@ -27,18 +27,17 @@ function ResumePage() {
                 </ul>
             </section>
 
-
             <section className={styles.section}>
                 <h2 className={styles.heading}>Languages</h2>
                 <ul className={styles.list}>
                     <li className={styles.listItem}>
-                        <strong>Kazakh</strong>, Native, Bilingual
+                        <strong>Kazakh</strong>, Native/Bilingual
                     </li>
                     <li className={styles.listItem}>
                         <strong>Russian</strong>, Bilingual
                     </li>
                     <li className={styles.listItem}>
-                        <strong>English</strong>, Advanced, C1
+                        <strong>English</strong>, Advanced (C1)
                     </li>
                 </ul>
             </section>
@@ -49,13 +48,14 @@ function ResumePage() {
                     <li className={styles.listItem}>
                         <strong>Johns Hopkins CTY</strong>, July 2023
                         <br />
-                        Game of Life: The Theory of Strategic Behavior
+                        Game Theory: The Study of Strategic Behavior
                     </li>
                     <li className={styles.listItem}>
                         <strong>«Sirius» Educational Centre</strong>, July 2021
                         <br />
-                        Fundamentals of 3D Modelling & Printing<br /><br />
-                        Designed an autonomous tractor with chef engineer of KAMAZ
+                        Fundamentals of 3D Modelling & Printing
+                        <br /><br />
+                        Designed an autonomous tractor with the chief engineer of KAMAZ
                     </li>
                 </ul>
             </section>
@@ -67,12 +67,12 @@ function ResumePage() {
                         <strong>Founder</strong>, <a href='https://www.instagram.com/sailaukan.agency/'>Sailaukan Agency</a><br />
                         Aug 2023 - Present
                         <br /><br />
-                        - Developed a visual identity for Bolashak program, Ministry of Ecology<br />
+                        - Developed a visual identity for the Bolashak program<br />
                         - Worked with Flask Coffee, FIRST, FunCode<br />
                         - Managed the team's work<br />
                     </li>
                     <li className={styles.listItem}>
-                        <strong>Event manager, Co-founder, </strong>
+                        <strong>Event Manager, Co-founder, </strong>
                         <a href='https://www.wso.rocks/'>World Space Olympiad</a>
                         <br />
                         Sep 2023 - Present
@@ -81,7 +81,7 @@ function ResumePage() {
                         - Promoted the event in media <br />
                         - Negotiated with partners and sponsors<br />
                         - Translated texts from Russian to Kazakh and English <br />
-                        - Taught rocket science for 7-11 grade students <br />
+                        - Taught rocket science to students in grades 7-11 <br />
                         - Designed graphic materials<br />
                         - Planned offline events<br />
                         - Managed the team's work<br />
@@ -90,24 +90,24 @@ function ResumePage() {
                         <strong>Head of Design</strong>, <a href='https://www.instagram.com/ustem_foundation/'>USTEM Foundation</a><br />
                         Sep 2023 - Jan 2024
                         <br /><br />
-                        - Created a branding for the fund<br />
-                        - Managed a work of designers<br />
-                        - Checked the quality of event designs<br />
-                        - Designed a visual identity for 3 international robotics competitions<br />
+                        - Created branding for the fund<br />
+                        - Managed a team of designers<br />
+                        - Ensured the quality of event designs<br />
+                        - Designed a visual identity for three international robotics competitions<br />
                     </li>
                     <li className={styles.listItem}>
                         <strong>Graphic Designer</strong>, Smart Investor<br />
                         Sep 2022 - Nov 2022
                         <br /><br />
-                        - Graphic and social media designer in an investment training company<br />
-                        - Designed elements of brand identity, advertisement, presentations and printing products<br />
-                        - Learned basics of trading and investing
+                        - Served as graphic and social media designer in an investment training company<br />
+                        - Designed elements of brand identity, advertisements, presentations, and print products<br />
+                        - Acquired basics of trading and investing
                     </li>
                     <li className={styles.listItem}>
-                        <strong>Graphic Designer</strong>, <a href='https://bc-pf.org/'>Beyond Curriculum PF</a><br />
+                        <strong>Graphic Designer</strong>, <a href='https://bc-pf.org/'>BeyondCurriculum PF</a><br />
                         Jun 2020 - May 2023
                         <br /><br />
-                        Designed posters, social media posts, web site elements, infographics, etc.
+                        - Designed posters, social media posts, website elements, infographics, etc.
                     </li>
                 </ul>
             </section>
@@ -123,7 +123,7 @@ function ResumePage() {
                         <strong>Judge</strong>, Smart Sarbaz, Ministry of Defense<br />
                         Jun 2023
                         <br /><br />
-                        - Judged 40+ projects on an international military robotics competition "Smart Sarbaz" in Spassk military camp<br />
+                        - Judged 40+ projects at the international military robotics competition "Smart Sarbaz" in Spassk military camp<br />
                     </li>
                 </ul>
             </section>
@@ -150,17 +150,17 @@ function ResumePage() {
                         - Competed with 9-12 grades being in 8th grade
                     </li>
                     <li className={styles.listItem}>
-                        <strong>First Place</strong>, Burning Heroes Al Hackathon 2024
+                        <strong>First Place</strong>, Burning Heroes AI Hackathon 2024
                         <br />
                         - $5,000 prize winner
                     </li>
                     <li className={styles.listItem}>
                         <strong>First Place</strong>, Zhas Hackathon 2022
                         <br />
-                        - Won $2,000 scholarship in a programming school from California
+                        - Won $2,000 scholarship at a programming school from California
                     </li>
                     <li className={styles.listItem}>
-                        <strong>First Place</strong> IT Junior Hackathon
+                        <strong>First Place</strong>, IT Junior Hackathon
                         <br />
                         - $2,000 prize winner
                     </li>
@@ -179,7 +179,7 @@ function ResumePage() {
                         <strong>IELTS</strong>, October 2023
                         <br />
                         Overall: 7.5
-                        <br />R:8.5 L:8.5 W:6.5 S:7.0
+                        <br />Reading: 8.5, Listening: 8.5, Writing: 6.5, Speaking: 7.0
                     </li>
                 </ul>
             </section>
