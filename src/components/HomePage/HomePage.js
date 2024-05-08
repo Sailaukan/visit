@@ -158,6 +158,7 @@ function HomePage() {
                         <button className={styles.restartButton} onClick={() => {
                             setShowScore(false)
                             setCurrentQuestion(0);
+                            setScore(0);
                         }}>Restart</button>
                     </div>
                 ) : (

@@ -1,32 +1,60 @@
-import React from 'react';
-import styles from './BlogPage.module.css';
+import React, { useEffect, useState } from "react";
+import styles from "./BlogPage.module.css";
+import supabase from "../../client.js";
+import Modal from "./Modal/Modal.js";
 
 function BlogPage() {
-  const blogPosts = [
-    {
-      id: 1,
-      title: 'Blogs',
-      summary: 'An introduction to React Hooks and how they can revolutionize your component development.',
-      date: 'April 10, 2024'
-    },
-    {
-        id: 1,
-        title: 'Understanding React Hooks',
-        summary: 'An introduction to React Hooks and how they can revolutionize your component development.',
-        date: 'April 10, 2024'
-      },
-  ];
+  const [posts, setPosts] = useState([]);
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedPost, setSelectedPost] = useState(null);
+
+  const openModal = (post) => {
+    setSelectedPost(post);
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+    setSelectedPost(null);
+  };
+
+  useEffect(() => {
+    getPosts();
+  }, []);
+
+  async function getPosts() {
+    try {
+      const { data, error } = await supabase.from("Posts").select("*");
+      if (error) throw error;
+      if (data != null) {
+        setPosts(data);
+      }
+    } catch (error) {
+      alert(error.message);
+    }
+  }
 
   return (
     <div className={styles.blogPage}>
       <h1 className={styles.title}>Blog Posts</h1>
-      {blogPosts.map((post) => (
-        <article key={post.id} className={styles.post}>
-          <h2 className={styles.postTitle}>{post.title}</h2>
-          <p className={styles.postDate}>{post.date}</p>
-          <p className={styles.postSummary}>{post.summary}</p>
-        </article>
+      {posts.map((post) => (
+        <div
+          key={post.id}
+          style={{ borderLeft: `4px solid ${post.color}` }}
+          className={styles.post}
+          onClick={() => openModal(post)}
+        >
+          <h2 classname={styles.postTitle}>{post.title}</h2>
+          <p classname={styles.postDate}>
+            {
+              post.created_at.substring(0, 10)
+            }
+          </p>
+        </div>
       ))}
+      {isOpen && selectedPost && (
+        <Modal title={selectedPost.title} content={selectedPost.content} closeModal={closeModal} />
+      )}
     </div>
   );
 }

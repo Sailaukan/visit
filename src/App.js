@@ -6,6 +6,7 @@ import ResumePage from './components/ResumePage/ResumePage.js';
 import BlogPage from './components/BlogPage/BlogPage.js';
 import './App.css';
 
+
 function App() {
   return (
     <BrowserRouter>
