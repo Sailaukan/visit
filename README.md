@@ -25,27 +25,21 @@ This project is a personal website developed using React, where visitors can tak
 
 ### Installation
 
-1. **Clone the repository:**
-    ```bash
-    git clone https://github.com/your-username/your-repository.git
-    cd your-repository
-    ```
-
-2. **Install dependencies:**
+1. **Install dependencies:**
     ```bash
     npm install
     # or
     yarn install
     ```
 
-3. **Start the development server:**
+2. **Start the development server:**
     ```bash
     npm start
     # or
     yarn start
     ```
 
-4. **Build the project (production):**
+3. **Build the project (production):**
     ```bash
     npm run build
     # or
