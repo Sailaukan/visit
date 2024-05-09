@@ -6,6 +6,8 @@ import useWindowSize from 'react-use/lib/useWindowSize'
 import Confetti from 'react-confetti'
 
 
+
+
 const questions = [
     {
         questionText: 'My favorite color', answerOptions: [
