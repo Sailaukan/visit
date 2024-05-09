@@ -64,6 +64,10 @@ function ResumePage() {
                 <h2 className={styles.heading}>Professional Experience</h2>
                 <ul className={styles.list}>
                     <li className={styles.listItem}>
+                        <strong>Board Member</strong>, <a href='https://bc-pf.org/'>BeyondCurriculum PF</a><br />
+                        April 2024 - Present
+                    </li>
+                    <li className={styles.listItem}>
                         <strong>Founder</strong>, <a href='https://www.instagram.com/sailaukan.agency/'>Sailaukan Agency</a><br />
                         Aug 2023 - Present
                         <br /><br />
