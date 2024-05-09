@@ -134,6 +134,14 @@ function HomePage() {
                 </div>
                 <div className={styles.info_item}>
                     <div className={styles.location_title}>
+                        Personality
+                    </div>
+                    <div className={styles.location_content}>
+                        ENFJ-A
+                    </div>
+                </div>
+                <div className={styles.info_item}>
+                    <div className={styles.location_title}>
                         Location
                     </div>
                     <div className={styles.location_content}>
