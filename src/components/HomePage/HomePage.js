@@ -34,7 +34,7 @@ const questions = [
         ]
     },
     {
-        questionText: 'Olympiad I participated first', answerOptions: [
+        questionText: 'The first Olympiad I participated in', answerOptions: [
             { answerText: 'Programming', isCorrect: false },
             { answerText: 'Math', isCorrect: true },
             { answerText: 'Chemistry', isCorrect: false },
