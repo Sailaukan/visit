@@ -1,11 +1,9 @@
 import styles from './HomePage.module.css';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Quiz.css';
-
 import useWindowSize from 'react-use/lib/useWindowSize'
 import Confetti from 'react-confetti'
-
-
+import supabase from "../../client.js";
 
 
 const questions = [
@@ -52,13 +50,44 @@ const questions = [
 ];
 
 
-
 function HomePage() {
+    const [ipAddress, setIPAddress] = useState('') // {ipAddress}
     const { width, height } = useWindowSize()
 
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [showScore, setShowScore] = useState(false);
     const [score, setScore] = useState(0);
+    
+    async function sendIp() {
+        try {
+          const { error } = await supabase
+            .from("Quiz")
+            .insert({
+                ip: ipAddress,
+                answers: score
+            })
+            .single();
+          if (error) throw error;
+        } catch (error) {
+          alert(error.message);
+        }
+      }
+
+      useEffect(() => {
+        if (showScore) {
+          sendIp().catch(console.error);
+        }
+      }, [showScore]);
+
+    useEffect(() => {
+        fetch('https://api.ipify.org?format=json')
+          .then(response => response.json())
+          .then(data => setIPAddress(data.ip))
+          .catch(error => console.log(error))
+      }, []);
+
+
+
 
     const handleAnswerOptionClick = (isCorrect) => {
         if (isCorrect) {
