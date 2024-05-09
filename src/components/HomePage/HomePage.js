@@ -51,7 +51,7 @@ const questions = [
 
 
 function HomePage() {
-    const [ipAddress, setIPAddress] = useState('') // {ipAddress}
+    const [ipAddress, setIPAddress] = useState('')
     const { width, height } = useWindowSize()
 
     const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -87,8 +87,6 @@ function HomePage() {
       }, []);
 
 
-
-
     const handleAnswerOptionClick = (isCorrect) => {
         if (isCorrect) {
             setScore(score + 1);
@@ -107,12 +105,33 @@ function HomePage() {
                 This is a personal website of Shakhnazar
             </p>
             <div className={styles.bio}>
-                <strong style={{ fontSize: "18px" }}>
-                    About me
-                </strong><br />
-                Creator
+                My projects are the proof that I have lived.
             </div>
             <div className={styles.info}>
+                <div className={styles.info_item}>
+                    <div className={styles.location_title}>
+                        Name
+                    </div>
+                    <div className={styles.location_content}>
+                        Shakhnazar
+                    </div>
+                </div>
+                <div className={styles.info_item}>
+                    <div className={styles.location_title}>
+                        Surname
+                    </div>
+                    <div className={styles.location_content}>
+                        Sailaukan
+                    </div>
+                </div>
+                <div className={styles.info_item}>
+                    <div className={styles.location_title}>
+                        Age
+                    </div>
+                    <div className={styles.location_content}>
+                        18
+                    </div>
+                </div>
                 <div className={styles.info_item}>
                     <div className={styles.location_title}>
                         Location
