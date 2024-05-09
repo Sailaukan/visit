@@ -64,11 +64,11 @@ function ResumePage() {
                 <h2 className={styles.heading}>Professional Experience</h2>
                 <ul className={styles.list}>
                     <li className={styles.listItem}>
-                        <strong>Board Member</strong>, <a href='https://bc-pf.org/'>BeyondCurriculum PF</a><br />
+                        <strong>Board Member</strong>, <a className={styles.link} href='https://bc-pf.org/'>BeyondCurriculum PF</a><br />
                         April 2024 - Present
                     </li>
                     <li className={styles.listItem}>
-                        <strong>Founder</strong>, <a href='https://www.instagram.com/sailaukan.agency/'>Sailaukan Agency</a><br />
+                        <strong>Founder</strong>, <a className={styles.link} href='https://www.instagram.com/sailaukan.agency/'>Sailaukan Agency</a><br />
                         Aug 2023 - Present
                         <br /><br />
                         - Developed a visual identity for the Bolashak program<br />
@@ -77,7 +77,7 @@ function ResumePage() {
                     </li>
                     <li className={styles.listItem}>
                         <strong>Event Manager, Co-founder, </strong>
-                        <a href='https://www.wso.rocks/'>World Space Olympiad</a>
+                        <a className={styles.link} href='https://www.wso.rocks/'>World Space Olympiad</a>
                         <br />
                         Sep 2023 - Present
                         <br /><br />
@@ -91,7 +91,7 @@ function ResumePage() {
                         - Managed the team's work<br />
                     </li>
                     <li className={styles.listItem}>
-                        <strong>Head of Design</strong>, <a href='https://www.instagram.com/ustem_foundation/'>USTEM Foundation</a><br />
+                        <strong>Head of Design</strong>, <a className={styles.link} href='https://www.instagram.com/ustem_foundation/'>USTEM Foundation</a><br />
                         Sep 2023 - Jan 2024
                         <br /><br />
                         - Created branding for the fund<br />
@@ -108,7 +108,7 @@ function ResumePage() {
                         - Acquired basics of trading and investing
                     </li>
                     <li className={styles.listItem}>
-                        <strong>Graphic Designer</strong>, <a href='https://bc-pf.org/'>BeyondCurriculum PF</a><br />
+                        <strong>Graphic Designer</strong>, <a className={styles.link} href='https://bc-pf.org/'>BeyondCurriculum PF</a><br />
                         Jun 2020 - May 2023
                         <br /><br />
                         - Designed posters, social media posts, website elements, infographics, etc.
