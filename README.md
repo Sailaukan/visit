@@ -4,14 +4,6 @@ Welcome to the repository for my personal website, featuring a fun quiz app wher
 
 ![Homepage Screenshot](path/to/homepage_screenshot.png)
 
-## Table of Contents
-- [Project Overview](#project-overview)
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [Quiz Questions](#quiz-questions)
-- [Technologies Used](#technologies-used)
-- [Contact](#contact)
-
 ## Project Overview
 
 This project is a personal website developed using React, where visitors can take a quiz about me. If you know me well, you can earn a perfect score and celebrate with confetti! It includes:
