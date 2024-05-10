@@ -72,7 +72,7 @@ function ResumePage() {
                         Aug 2023 - Present
                         <br /><br />
                         - Developed a visual identity for the Bolashak program<br />
-                        - Worked with Flask Coffee, FIRST, FunCode<br />
+                        - Worked with Flask Coffee, Ministry of Ecology, FIRST, FunCode<br />
                         - Managed the team's work<br />
                     </li>
                     <li className={styles.listItem}>
