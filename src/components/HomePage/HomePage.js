@@ -100,7 +100,7 @@ function HomePage() {
     };
     return (
         <div className={styles.homePage}>
-            <h1 className={styles.title}>Wanna know more about me?</h1>
+            <h1 className={styles.title}>Wanna know more<br/>about me?</h1>
             <p className={styles.intro}>
                 This is a personal website of Shakhnazar
             </p>
