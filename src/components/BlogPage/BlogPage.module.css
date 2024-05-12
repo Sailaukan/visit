@@ -30,13 +30,13 @@
   }
   
   .postTitle {
-    font-size: 1.5rem;
+    font-size: 3.0rem;
     color: #007bff;
     margin-bottom: 5px;
   }
   
   .postDate {
-    font-size: 0.85rem;
+    font-size: 30px;
     color: #666;
     margin-bottom: 10px;
   }
@@ -45,4 +45,3 @@
     font-size: 1rem;
     color: #333;
   }
-  

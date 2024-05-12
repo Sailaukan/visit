@@ -52,6 +52,9 @@ function Modal({ title, content, closeModal }) {
             );
           })}
         </div>
+        {/* <center className={classes.reactions}>
+          a
+        </center> */}
       </div>
     </div>
   );

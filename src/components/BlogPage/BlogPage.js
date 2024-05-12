@@ -44,12 +44,12 @@ function BlogPage() {
           className={styles.post}
           onClick={() => openModal(post)}
         >
-          <h2 classname={styles.postTitle}>{post.title}</h2>
-          <p classname={styles.postDate}>
+          <h1 style={{fontSize: 25}}>{post.title}</h1>
+          <h1 style={{fontSize: 15, fontWeight: 400}}>
             {
               post.created_at.substring(0, 10)
             }
-          </p>
+          </h1>
         </div>
       ))}
       {isOpen && selectedPost && (
