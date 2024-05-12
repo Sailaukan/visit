@@ -20,6 +20,12 @@ function Header() {
           Resume
         </NavLink>
         <NavLink 
+          to="/design"
+          className={({ isActive }) => isActive ? styles.navLinkActive : styles.navLink}
+        >
+          Design
+        </NavLink>
+        <NavLink 
           to="/blog"
           className={({ isActive }) => isActive ? styles.navLinkActive : styles.navLink}
         >

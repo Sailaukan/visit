@@ -173,6 +173,11 @@ function ResumePage() {
                         <br />
                         - For contribution to the development of rocket science in Kazakhstan
                     </li>
+                    <li className={styles.listItem}>
+                        <strong>Thank you letter</strong> from the Minister of Ecology
+                        <br />
+                        - For designing the Ministry's logotype
+                    </li>
                 </ul>
             </section>
 
