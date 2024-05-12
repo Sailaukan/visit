@@ -44,7 +44,7 @@ function BlogPage() {
           className={styles.post}
           onClick={() => openModal(post)}
         >
-          <h1 style={{fontSize: 25}}>{post.title}</h1>
+          <t style={{fontSize: 23, fontWeight: 600}}>{post.title}</t>
           <h1 style={{fontSize: 15, fontWeight: 400}}>
             {
               post.created_at.substring(0, 10)

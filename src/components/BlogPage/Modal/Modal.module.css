@@ -72,12 +72,3 @@
   text-decoration: none;
   cursor: pointer;
 }
-
-.reactions{
-  width: 100%;
-  margin-top: 25px;
-  margin-bottom: 5px;
-  border: 1px solid rgb(193, 193, 193);
-  padding: 10px;
-  border-radius: 5px;
-}
