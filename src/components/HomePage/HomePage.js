@@ -153,7 +153,7 @@ function HomePage() {
                         Email
                     </div>
                     <div className={styles.location_content}>
-                        sajlaukansahnazar@gmail.com
+                        sajlaukansahnazar at gmail.com
                     </div>
                 </div>
                 <div className={styles.info_item}>
