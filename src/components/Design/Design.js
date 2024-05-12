@@ -17,7 +17,7 @@ const Design = () => {
                     <div className={classes.lineAndItem}>
                         <div className={classes.line} style={{ backgroundColor: "#ccc" }} />
                         <div className={classes.listItem}>
-                            Create an account in ChatGPT to ask any questions there
+                            Create an account in ChatGPT to ask any questions
                         </div>
                     </div>
 
@@ -97,7 +97,14 @@ const Design = () => {
                     <div className={classes.lineAndItem}>
                         <div className={classes.line} style={{ backgroundColor: "#ccc" }} />
                         <div className={classes.listItem}>
-                            Take low-cost orders from acquaintances
+                            Take low-cost orders from acquaintances for practice
+                        </div>
+                    </div>
+
+                    <div className={classes.lineAndItem}>
+                        <div className={classes.line} style={{ backgroundColor: "#ccc" }} />
+                        <div className={classes.listItem}>
+                            Position yourself as a designer on social networks
                         </div>
                     </div>
 
@@ -119,7 +126,7 @@ const Design = () => {
                     <div className={classes.lineAndItem}>
                         <div className={classes.line} style={{ backgroundColor: "#ccc" }} />
                         <div className={classes.listItem}>
-                            Lectures from Russian professionals
+                            Listen to lectures from Russian professionals
                         </div>
                         <div
                             className={classes.link}
@@ -145,6 +152,38 @@ const Design = () => {
             <section className={classes.section}>
                 <h2 className={classes.heading}>Pro design guide</h2>
                 <div className={classes.list}>
+
+
+                    <div className={classes.lineAndItem}>
+                        <div className={classes.line} style={{ backgroundColor: "#ccc" }} />
+                        <div className={classes.listItem}>
+                            Make money on design and buy a MacBook
+                        </div>
+                        <div
+                            className={classes.link}
+                            style={{ borderColor: "#333" }}
+                            onClick={() => window.open('https://flagmanstore.kz/', 'mywindow')}>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="22" fill="currentColor" className={classes.iconP} viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div className={classes.lineAndItem}>
+                        <div className={classes.line} style={{ backgroundColor: "#ccc" }} />
+                        <div className={classes.listItem}>
+                            Read some graphic design books
+                        </div>
+                        <div
+                            className={classes.link}
+                            style={{ borderColor: "#333" }}
+                            onClick={() => window.open('https://bootcamp.uxdesign.cc/10-best-books-every-graphic-designers-should-own-in-2022-739b1666b9b9', 'mywindow')}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className={classes.iconP} viewBox="0 0 16 16">
+                                <path d="M9.025 8c0 2.485-2.02 4.5-4.513 4.5A4.506 4.506 0 0 1 0 8c0-2.486 2.02-4.5 4.512-4.5A4.506 4.506 0 0 1 9.025 8m4.95 0c0 2.34-1.01 4.236-2.256 4.236S9.463 10.339 9.463 8c0-2.34 1.01-4.236 2.256-4.236S13.975 5.661 13.975 8M16 8c0 2.096-.355 3.795-.794 3.795-.438 0-.793-1.7-.793-3.795 0-2.096.355-3.795.794-3.795.438 0 .793 1.699.793 3.795" />
+                            </svg>
+                        </div>
+                    </div>
 
                     <div className={classes.lineAndItem}>
                         <div className={classes.line} style={{ backgroundColor: "#ccc" }} />
