@@ -58,7 +58,7 @@ function ResumePage() {
                         Designed an autonomous tractor with the chief engineer of KAMAZ
                     </li>
                     <li className={styles.listItem}>
-                        <strong>nFactorial Incubator</strong>, June - July 2024
+                        <strong>nFactorial Incubator</strong>, June - August 2024
                         <br />
                         Practiced in AI-based web development
                     </li>
