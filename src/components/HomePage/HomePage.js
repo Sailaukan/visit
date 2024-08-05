@@ -145,7 +145,7 @@ function HomePage() {
                         Location
                     </div>
                     <div className={styles.location_content}>
-                        Pavlodar, Kazakhstan
+                        Almaty, Kazakhstan
                     </div>
                 </div>
                 <div className={styles.info_item}>
