@@ -33,6 +33,14 @@ function ResumePage() {
             School with one of the highest average national exam score in
             Kazakhstan
           </li>
+          <li className={styles.listItem}>
+            <strong>Undergraduate</strong>, 2024-2029
+            <br />
+            Nazarbayev University, Astana
+            <br />
+            <br />
+            Top 1 University in Kazakhstan
+          </li>
         </ul>
       </section>
 
