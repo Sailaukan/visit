@@ -34,7 +34,7 @@ function ResumePage() {
             Kazakhstan
           </li>
           <li className={styles.listItem}>
-            <strong>Undergraduate</strong>, 2024-2029
+            <strong>Foundation Year</strong>, 2024-2025
             <br />
             Nazarbayev University, Astana
             <br />
@@ -79,9 +79,6 @@ function ResumePage() {
             <strong>nFactorial Incubator</strong>, June - August 2024
             <br />
             - Educational programming summer camp
-            <br />
-            - 85 people were selected among 2000+ applicants from all over
-            Kazakhstan
             <br />- Developed AI powered{" "}
             <a
               className={styles.link}
@@ -127,10 +124,10 @@ function ResumePage() {
           <li className={styles.listItem}>
             <strong>Event Manager, Co-founder, </strong>
             <a className={styles.link} href="https://www.wso.rocks/">
-              World Space Olympiad
+              QazAstroShift
             </a>
             <br />
-            Sep 2023 - Present
+            Sep 2023 - Jun 2024
             <br />
             <br />
             - Authored competition regulations
@@ -160,8 +157,6 @@ function ResumePage() {
             <br />
             <br />
             - Created branding for the fund
-            <br />
-            - Managed a team of designers
             <br />
             - Ensured the quality of event designs
             <br />
