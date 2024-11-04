@@ -1,6 +1,6 @@
 # Personal Website - Shakhnazar's Quiz App
 
-Welcome to the repository for my personal website, featuring a fun quiz app where you can test how well you know me! This website showcases my skills in web development and my personal interests. Explore and enjoy!
+Welcome to the repository for my personal website, featuring a fun quiz app where you can test how well you know me! This website showcases my skills and my personal interests. Explore and enjoy!
 
 ## Project Overview
 
@@ -8,40 +8,3 @@ This project is a personal website developed using React, where visitors can tak
 - **Personal Bio** section
 - **Quiz App** with multiple questions about me
 - Links to my **social media profiles**
-
-## Features
-
-- **Responsive Design:** Works seamlessly across devices.
-- **Quiz App:** Includes a set of personal quiz questions with score-based messages.
-- **Confetti Animation:** Perfect score triggers a confetti celebration.
-- **Social Links:** Directs to my social media platforms (Instagram, LinkedIn, etc.).
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js (version 14+)
-- npm or yarn
-
-### Installation
-
-1. **Install dependencies:**
-    ```bash
-    npm install
-    # or
-    yarn install
-    ```
-
-2. **Start the development server:**
-    ```bash
-    npm start
-    # or
-    yarn start
-    ```
-
-3. **Build the project (production):**
-    ```bash
-    npm run build
-    # or
-    yarn build
-    ```
