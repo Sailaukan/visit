@@ -41,6 +41,14 @@ function ResumePage() {
             <br />
             Top 1 University in Kazakhstan
           </li>
+          <li className={styles.listItem}>
+            <strong>Undergraduate</strong>, 2025-2029
+            <br />
+            Minerva University, San-Francisco
+            <br />
+            <br />
+            Major in Computer Science & AI
+          </li>
         </ul>
       </section>
 
