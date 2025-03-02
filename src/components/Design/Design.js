@@ -175,6 +175,7 @@ const Design = () => {
                         <div className={classes.listItem}>
                             Read some graphic design books
                         </div>
+
                         <div
                             className={classes.link}
                             style={{ borderColor: "#333" }}

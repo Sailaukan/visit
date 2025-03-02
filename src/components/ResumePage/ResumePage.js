@@ -4,18 +4,27 @@ import styles from "./ResumePage.module.css";
 function ResumePage() {
   return (
     <div className={styles.resumePage}>
-      <section className={styles.section}>
-        <h1 className={styles.heading}>Professional Summary</h1>
-        <p>
-          I design logos for ministries, create robots for global competitions,
-          develop websites using React, organize the largest rocketry
-          competition in Central Asia, and teach STEM to children.
-        </p>
-      </section>
 
       <section className={styles.section}>
         <h2 className={styles.heading}>Education</h2>
         <ul className={styles.list}>
+          <li className={styles.listItem}>
+
+          <strong>Undergraduate</strong>, 2025-2029
+            <br />
+            Minerva University, San-Francisco
+            <br />
+            <br />
+            Major in Computer Science & AI
+          </li>
+          <li className={styles.listItem}>
+            <strong>Foundation Year</strong>, 2024-2025
+            <br />
+            Nazarbayev University, Astana
+            <br />
+            <br />
+            Top 1 University in Kazakhstan
+          </li>
           <li className={styles.listItem}>
             <strong>School</strong>, 2018-2024
             <br />
@@ -32,14 +41,6 @@ function ResumePage() {
             <br />
             School with one of the highest average national exam score in
             Kazakhstan
-          </li>
-          <li className={styles.listItem}>
-            <strong>Foundation Year</strong>, 2024-2025
-            <br />
-            Nazarbayev University, Astana
-            <br />
-            <br />
-            Top 1 University in Kazakhstan
           </li>
         </ul>
       </section>
@@ -65,7 +66,7 @@ function ResumePage() {
           <li className={styles.listItem}>
             <strong>Johns Hopkins CTY</strong>, July 2023
             <br />
-            Game Theory: The Study of Strategic Behavior
+            Mathematics – "Game Theory: The Study of Strategic Behavior"
           </li>
           <li className={styles.listItem}>
             <strong>«Sirius» Educational Centre</strong>, July 2021

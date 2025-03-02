@@ -1,17 +1,29 @@
 .resumePage {
-  padding: 20px;
-  max-width: 500px;
+  padding: 30px 20px;
+  max-width: 550px;
   margin: auto;
 }
 
 .heading {
-  font-size: 1.8rem;
-  color: #333;
-  margin-bottom: 10px;
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 20px;
+  font-weight: 700;
+  position: relative;
+}
+
+.heading:after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background-color: #333;
 }
 
 .section {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 .list {
@@ -21,68 +33,52 @@
 
 .listItem {
   background-color: #ffffff;
-  padding: 15px;
-  margin-bottom: 15px;
-  border-radius: 8px;
-  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
   border: 1px solid #e3e3e3;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
 }
 
 .listItem:hover {
-  box-shadow: 0px 7px 10px rgb(243, 243, 243);
-  transform: scale(1.01);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  transform: translateY(-3px);
+}
+
+.listItem strong {
+  font-size: 1.1rem;
+  color: #222;
+  display: inline-block;
+  margin-bottom: 5px;
 }
 
 .link {
-  color: #18272f;
-  vertical-align: top;
-  overflow: hidden;
+  color: #000;
+  text-decoration: none;
   position: relative;
   display: inline-block;
+  font-weight: 500;
 }
 
-.link::before,
-.link::after {
+.link::before {
   content: "";
   position: absolute;
   width: 100%;
-  left: 0;
-}
-.link::before {
-  background-color: #54b3d6;
-  height: 2px;
+  height: 1px;
   bottom: 0;
-  transform-origin: 100% 50%;
+  left: 0;
+  background-color: #000;
   transform: scaleX(0);
-  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
-}
-.link::after {
-  content: attr(data-replace);
-  height: 100%;
-  top: 0;
-  transform-origin: 100% 50%;
-  transform: translate3d(200%, 0, 0);
-  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
-  color: #54b3d6;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
 }
 
 .link:hover::before {
-  transform-origin: 0% 50%;
   transform: scaleX(1);
-}
-.link:hover::after {
-  transform: translate3d(0, 0, 0);
+  transform-origin: bottom left;
 }
 
 .link:hover {
-  text-decoration: none;
-}
-
-.link span {
-  display: inline-block;
-  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
-}
-
-.link:hover span {
-  transform: translate3d(-200%, 0, 0);
+  color: #333;
 }

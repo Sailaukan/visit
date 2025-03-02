@@ -1,37 +1,48 @@
 .designContent {
-    padding: 20px;
-    max-width: 500px;
+    padding: 30px 20px;
+    max-width: 550px;
     margin: auto;
 }
 
 .lineAndItem {
     display: flex;
     align-items: center;
+    margin-bottom: 5px;
 }
 
 .line {
     flex: 0 0 25px;
     height: 3px;
+    background-color: #ddd !important;
 }
 
 .iconY{
     color: rgb(187, 26, 26);
+    transition: transform 0.2s ease;
 }
 
 .iconB{
     color: rgb(53, 26, 187);
+    transition: transform 0.2s ease;
 }
 
 .iconD{
     color: rgb(209, 7, 125);
+    transition: transform 0.2s ease;
 }
 
 .iconI{
     color: rgb(209, 7, 101);
+    transition: transform 0.2s ease;
 }
 
 .iconP{
     color: rgb(30, 30, 30);
+    transition: transform 0.2s ease;
+}
+
+.iconY:hover, .iconB:hover, .iconD:hover, .iconI:hover, .iconP:hover {
+    transform: scale(1.15);
 }
 
 .listItem {
@@ -41,6 +52,9 @@
     margin-bottom: 25px;
     border-radius: 8px;
     border: 1px solid #e3e3e3;
+    flex: 1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+    transition: all 0.3s ease;
 }
 
 .link {
@@ -54,35 +68,47 @@
     align-items: center;
     justify-content: center;
     padding: 0px 20px;
-    border: 1px solid rgb(255, 26, 26);
+    border: 1px solid rgb(220, 220, 220);
+    transition: all 0.3s ease;
 }
 
-
 .link:hover {
-    box-shadow: 0px 7px 10px rgba(146, 146, 146, 0.181);
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1);
     transform: scale(1.05);
-
-    transition: box-shadow 0.2s ease, transform 0.2s ease;
     cursor: pointer;
 }
 
 .heading {
-    font-size: 1.8rem;
-    color: #333;
-    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 30px;
+    font-weight: 700;
+    position: relative;
+}
+
+.heading:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background-color: #333;
 }
 
 .section {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 .list {
     list-style-type: none;
-    border-left: 3px solid #ccc;
+    border-left: 3px solid #ddd;
+    margin-left: 12px;
 }
 
 .video {
-    border-radius: 5px;
+    border-radius: 8px;
     border: none;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }

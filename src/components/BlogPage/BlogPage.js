@@ -7,6 +7,7 @@ function BlogPage() {
   const [posts, setPosts] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
   const [selectedPost, setSelectedPost] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   const openModal = (post) => {
     setSelectedPost(post);
@@ -24,34 +25,51 @@ function BlogPage() {
 
   async function getPosts() {
     try {
-      const { data, error } = await supabase.from("Posts").select("*");
+      setLoading(true);
+      const { data, error } = await supabase.from("Posts").select("*").order('created_at', { ascending: false });
       if (error) throw error;
       if (data != null) {
         setPosts(data);
       }
     } catch (error) {
       alert(error.message);
+    } finally {
+      setLoading(false);
     }
   }
 
   return (
     <div className={styles.blogPage}>
       <h1 className={styles.title}>Blog Posts</h1>
-      {posts.map((post) => (
-        <div
-          key={post.id}
-          style={{ borderLeft: `4px solid ${post.color}` }}
-          className={styles.post}
-          onClick={() => openModal(post)}
-        >
-          <t style={{fontSize: 23, fontWeight: 600}}>{post.title}</t>
-          <h1 style={{fontSize: 15, fontWeight: 400}}>
-            {
-              post.created_at.substring(0, 10)
-            }
-          </h1>
+      
+      {loading ? (
+        <div className={styles.loadingContainer}>
+          <div className={styles.loadingSpinner}></div>
         </div>
-      ))}
+      ) : posts.length === 0 ? (
+        <div className={styles.emptyState}>
+          <p>No blog posts available yet.</p>
+        </div>
+      ) : (
+        posts.map((post) => (
+          <div
+            key={post.id}
+            style={{ borderLeft: `4px solid ${post.color || "#000"}` }}
+            className={styles.post}
+            onClick={() => openModal(post)}
+          >
+            <div className={styles.postTitle}>{post.title}</div>
+            <div className={styles.postDate}>
+              {new Date(post.created_at).toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'short',
+                day: 'numeric'
+              })}
+            </div>
+          </div>
+        ))
+      )}
+      
       {isOpen && selectedPost && (
         <Modal title={selectedPost.title} content={selectedPost.content} closeModal={closeModal} />
       )}

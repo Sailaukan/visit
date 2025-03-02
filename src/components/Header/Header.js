@@ -25,12 +25,12 @@ function Header() {
         >
           Design
         </NavLink>
-        <NavLink 
+        {/* <NavLink 
           to="/blog"
           className={({ isActive }) => isActive ? styles.navLinkActive : styles.navLink}
         >
           Blog
-        </NavLink>
+        </NavLink> */}
       </nav>
     </header>
   );

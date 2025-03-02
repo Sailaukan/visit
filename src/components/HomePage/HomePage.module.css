@@ -1,91 +1,323 @@
 .homePage {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 20px;
-    max-width: 500px;
-    margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 30px 20px 50px;
+  max-width: 550px;
+  margin: auto;
+}
+
+/* Hero Section */
+.heroSection {
+  position: relative;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 .title {
-    font-size: 2.5rem;
-    margin-bottom: 0px;
-    margin-left: 20px;
-    margin-right: 20px;
+  font-size: 3rem;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #222;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.animateTitle {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .intro {
-    font-size: 1.1rem;
-    max-width: 600px;
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-bottom: 25px;
+  color: #555;
+  font-weight: 400;
+}
+
+.decorativeLine {
+  width: 80px;
+  height: 4px;
+  background-color: #222;
+  margin: 0 auto;
+  position: relative;
+}
+
+.decorativeLine:before,
+.decorativeLine:after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: #222;
+  border-radius: 50%;
+}
+
+.decorativeLine:before {
+  left: -10px;
+}
+
+.decorativeLine:after {
+  right: -10px;
+}
+
+/* Bio Section */
+.bioSection {
+  margin-bottom: 60px;
 }
 
 .bio {
-    margin-top: 10px;
-    border: 1px solid rgb(198, 198, 198);
-    border-left: 5px solid rgb(80, 80, 80);
-    border-radius: 10px;
-    text-align: left;
-    padding: 15px;
+  margin-top: 10px;
+  border: 1px solid rgb(220, 220, 220);
+  border-left: 5px solid rgb(50, 50, 50);
+  border-radius: 10px;
+  text-align: left;
+  padding: 25px;
+  font-size: 1.1rem;
+  color: #333;
+  background-color: #fafafa;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bio:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.bioHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.avatarPlaceholder {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #222;
+  margin-right: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.avatarPlaceholder:after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+  background-color: #fafafa;
+  opacity: 0.2;
+}
+
+.bioName {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0;
+  color: #222;
 }
 
 .info {
-    margin-top: 10px;
-    border: 1px solid rgb(198, 198, 198);
-    border-radius: 10px;
-    text-align: left;
-    padding: 15px;
+  margin-top: 25px;
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 10px;
+  text-align: left;
+  padding: 25px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.infoHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.infoIcon {
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+.infoHeader h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
 }
 
 .info_item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.info_item:last-child {
+  border-bottom: none;
 }
 
 .location_content {
-    flex: 1;
-    color: black;
+  flex: 1;
+  color: #333;
+  font-size: 1rem;
+  text-align: right;
 }
 
 .location_title {
-    font-weight: bold;
-    flex: 1;
-    padding: 4px 8px;
-    color: black;
-    max-width: 100px;
+  font-weight: 600;
+  flex: 1;
+  padding: 4px 8px 4px 0;
+  color: #222;
+  max-width: 120px;
+  font-size: 1rem;
 }
 
-.info {
-    color: white;
+.socialIcons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: flex-end;
 }
 
 a {
-    text-decoration: underline;
-    color: black;
+  text-decoration: none;
+  color: #000;
+  transition: color 0.2s ease;
 }
 
 a:hover {
-    color: rgb(114, 114, 114);
+  color: #555;
 }
 
 .icon {
-    margin-top: 5px;
-    margin-right: 5px;
+  transition: all 0.2s ease;
+  color: #333;
 }
+
+.icon:hover {
+  transform: scale(1.2);
+  color: #000;
+}
+
+/* Quiz Section */
+.quizSection {
+  margin-bottom: 40px;
+}
+
+.quizHeader {
+  margin-bottom: 20px;
+}
+
+.quizTitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+}
+
 
 .subtitle {
-    margin-top: 50px;
-    font-size: 0.9rem;
-    color: grey;
-    max-width: 600px;
+  font-size: 1rem;
+  color: #555;
+  max-width: 600px;
+  font-weight: 500;
+  margin-top: 15px;
 }
 
-.restartButton{
-    background-color: #333;
-    padding: 10px 30px;
-    font-size: 15px;
-    color: white;
-    border: 1px solid;
-    margin-top: 10px;
-    border-radius: 7px;
+.scoreEmoji {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 15px;
 }
+
+.perfectScore {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.restartButton {
+  background-color: #222;
+  padding: 12px 30px;
+  font-size: 15px;
+  color: white;
+  border: none;
+  margin-top: 20px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.restartButton:hover {
+  background-color: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .footerContent {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .footerContent p {
+    margin: 5px 0;
+  }
+}
+
+/* Quote styling - improved version */
+.quote {
+  margin: 40px auto;
+  position: relative;
+  max-width: 90%;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #333;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+

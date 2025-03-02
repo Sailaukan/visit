@@ -5,36 +5,82 @@
   }
   
   .title {
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: #333;
     text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+    position: relative;
+  }
+  
+  .title:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #333;
   }
   
   .post {
     background-color: #ffffff;
-    border-left: 7px solid #0066d4;
+    border-left: 7px solid #000;
     border-top: 1px solid rgb(216, 216, 216);
     border-right: 1px solid rgb(216, 216, 216);
     border-bottom: 1px solid rgb(216, 216, 216);
-    padding-top: 15px;
-    padding-left: 20px;
-    padding-bottom: 10px;
+    padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
   }
   
   .post:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    transform: scale(1.01);
+    transform: translateY(-3px);
     cursor: pointer;
   }
   
-  .postDate {
-    color: #666;
+  .postTitle {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #222;
   }
   
-  .postSummary {
-    font-size: 1rem;
-    color: #333;
+  .postDate {
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 400;
+  }
+  
+  .loadingContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+  }
+  
+  .loadingSpinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top-color: #000;
+    animation: spin 1s ease-in-out infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .emptyState {
+    text-align: center;
+    padding: 40px 0;
+    color: #666;
+    font-style: italic;
   }
