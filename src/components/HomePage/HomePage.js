@@ -146,13 +146,29 @@ function HomePage() {
             <h3>Personal Info</h3>
           </div>
           <div className={styles.info_item}>
+            <div className={styles.location_title}>Name</div>
+            <div className={styles.location_content}>Shakhnazar</div>
+          </div>
+          <div className={styles.info_item}>
+            <div className={styles.location_title}>Surname</div>
+            <div className={styles.location_content}>Sailaukan</div>
+          </div>
+          <div className={styles.info_item}>
+            <div className={styles.location_title}>Age</div>
+            <div className={styles.location_content}>19</div>
+          </div>
+          <div className={styles.info_item}>
+            <div className={styles.location_title}>Personality</div>
+            <div className={styles.location_content}>ENFJ-A</div>
+          </div>
+          <div className={styles.info_item}>
             <div className={styles.location_title}>Location</div>
             <div className={styles.location_content}>Astana, Kazakhstan</div>
           </div>
           <div className={styles.info_item}>
             <div className={styles.location_title}>Email</div>
             <div className={styles.location_content}>
-              <a href="mailto:sailaukan@gmail.com">sailaukan@gmail.com</a>
+              sajlaukansahnazar at gmail.com
             </div>
           </div>
           <div className={styles.info_item}>
