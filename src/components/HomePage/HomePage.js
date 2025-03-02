@@ -138,7 +138,7 @@ function HomePage() {
           </p>
         </div>
         <div className={styles.quote}>
-          <p>"My projects are the prove that I have lived"</p>
+          <p>"My projects are the proof that I have lived"</p>
         </div>
         <div className={styles.info}>
           <div className={styles.infoHeader}>
