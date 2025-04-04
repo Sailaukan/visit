@@ -8,15 +8,15 @@ function ResumePage() {
       <section className={styles.section}>
         <h2 className={styles.heading}>Education</h2>
         <ul className={styles.list}>
-          <li className={styles.listItem}>
+          // <li className={styles.listItem}>
 
-          <strong>Undergraduate</strong>, 2025-2029
-            <br />
-            Minerva University, San-Francisco
-            <br />
-            <br />
-            Major in Computer Science & AI
-          </li>
+          // <strong>Undergraduate</strong>, 2025-2029
+          //   <br />
+          //   Minerva University, San-Francisco
+          //   <br />
+          //   <br />
+          //   Major in Computer Science & AI
+          // </li>
           <li className={styles.listItem}>
             <strong>Foundation Year</strong>, 2024-2025
             <br />
